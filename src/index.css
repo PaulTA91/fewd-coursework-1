@@ -19,6 +19,9 @@ body {
     color: #f1b51c;
     }
 
+    nav {
+        width: 99%;
+    }
     nav ul {
     background-color: #f4ad45;
     margin: 0.5%;
@@ -41,4 +44,27 @@ body {
     .main-color{
         background-color: #AD184F;
         margin: 0.5%;
+    }
+
+    .recipe-card{
+        margin: 10px;
+        background-color: #AD184F;
+    }
+
+    .submenu{
+        display: flex;
+        max-width: 99%;
+        flex-wrap: wrap;
+        
+    }
+
+    .recipe-accordian{
+        margin: 10px;
+    }
+
+    .menu-list{
+        margin-bottom: 20px;
+        font-size: 25px;
+        font-weight: bold;
+        color: #000000;
     }

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
-import Card from "react-bootstrap/Card";
 import Accordian from "react-bootstrap/Accordion";
+import Card from "react-bootstrap/Card";
 import DisplayIngredients from "./DisplayIngredients";
 import ShowReviews from "./ShowReviews";
 
@@ -26,14 +26,19 @@ const MenuItem = ({ recipes }) => {
         <Card.Body>{description}</Card.Body>
         <Card.Footer>{price}</Card.Footer>
       </Card> */}
-      <Accordian>
-        <h1>{name}</h1>
-        <h3>{description}</h3>
-        <Accordian.Header>Instructions</Accordian.Header>
-        <Accordian.Body>{instructions}</Accordian.Body>
-        <DisplayIngredients recipes={recipes} />
-        <ShowReviews recipes={recipes} />
-      </Accordian>
+      <Card className="recipe-card">
+        <Accordian>
+          <h1>{name}</h1>
+          <h3>{description}</h3>
+          <Accordian id="instructions" className="recipe-accordian">
+            <Accordian.Header>Instructions</Accordian.Header>
+            <Accordian.Body>{instructions}</Accordian.Body>
+          </Accordian>
+          <DisplayIngredients recipes={recipes} />
+          <ShowReviews recipes={recipes} />
+        </Accordian>
+      </Card>
+      <p></p>
     </>
   );
 };

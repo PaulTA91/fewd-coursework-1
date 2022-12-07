@@ -558,23 +558,12 @@ export const recipes = [
     description:
       "Classic carrot cake with moreish icing and chopped walnuts or pecans.",
     category: "Dessert",
-    instructions:
-      "Mix the sugar and oil. Add eggs, beating after each one. Add carrots. Sift the dry ingredients together, and stir them in. Butter a 9x13 pan, pour in the batter and bake at 325F for 40 minutes. Top with Cream Cheese Frosting for Carrot Cake.",
+    instructions: "cook noodle",
     ingredients: [
       { name: "Vegetable Oil", amount: "230ml" },
       { name: "Natural Yogurt", amount: "100g" },
-      { name: "Large Eggs", amount: "4" },
-      { name: "Vanilla Extract", amount: "1.p tsp" },
-      { name: "Orange Zest", amount: "1/2" },
-      { name: "Self-raising Flour", amount: "256g" },
-      { name: "Light Muscovado Sugar", amount: "335g" },
-      { name: "Ground Cinnamon", amount: "2.5 tsp" },
-      { name: "Grated Nutmeg", amount: "5g" },
-      { name: "Grated Carrots", amount: "265g" },
-      { name: "Chopped Walnuts", amount: "100g" },
-      { name: "Salted Butter", amount: "100g" },
-      { name: "Icing Sugar", amount: "300g" },
-      { name: "Soft Cheese", amount: "100g" },
+      { name: "Earge Lggs", amount: "4" },
+
       ,
     ],
 

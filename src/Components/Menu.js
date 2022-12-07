@@ -6,11 +6,13 @@ const Menu = ({ recipes }) => {
     <>
       <div className="container-fluid">
         <div className="row">
-          <div className="col-2 submenu main-color">
+          <div className="col-3 submenu main-color">
             <ul>
               {recipes.map((recipe) => (
                 <li key={recipe.id}>
-                  <Link to={recipe.name}>{recipe.name}</Link>
+                  <Link className="menu-list" to={recipe.name}>
+                    {recipe.name}
+                  </Link>
                 </li>
               ))}
             </ul>

@@ -12,16 +12,18 @@ const ShowReviews = ({ recipes }) => {
 
   return (
     <>
-      <Accordian.Header>Reviews</Accordian.Header>
-      <Accordian.Body>
-        <ul>
-          {reviews.map((reviews) => (
-            <li key={reviews.name}>
-              {reviews.name}: {reviews.content}
-            </li>
-          ))}
-        </ul>
-      </Accordian.Body>
+      <Accordian id="reviews" className="recipe-accordian">
+        <Accordian.Header>Reviews</Accordian.Header>
+        <Accordian.Body>
+          <ul>
+            {reviews.map((reviews) => (
+              <li key={reviews.name}>
+                {reviews.name}: {reviews.content}
+              </li>
+            ))}
+          </ul>
+        </Accordian.Body>
+      </Accordian>
     </>
   );
 };
