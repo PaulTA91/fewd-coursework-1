@@ -4,13 +4,15 @@ import Accordian from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 import DisplayIngredients from "./DisplayIngredients";
 import ShowReviews from "./ShowReviews";
+import ShowNutrition from "./ShowNutrition";
+import DisplayInstructions from "./DisplayInstructions";
 
 const MenuItem = ({ recipes }) => {
   const { itemId } = useParams();
   const currentItem = recipes.filter((item) => {
     return item.name === itemId;
   });
-  const { name, description, instructions } = currentItem[0];
+  const { name, description } = currentItem[0];
 
   return (
     <>
@@ -30,12 +32,10 @@ const MenuItem = ({ recipes }) => {
         <Accordian>
           <h1>{name}</h1>
           <h3>{description}</h3>
-          <Accordian id="instructions" className="recipe-accordian">
-            <Accordian.Header>Instructions</Accordian.Header>
-            <Accordian.Body>{instructions}</Accordian.Body>
-          </Accordian>
+          <DisplayInstructions recipes={recipes} />
           <DisplayIngredients recipes={recipes} />
           <ShowReviews recipes={recipes} />
+          <ShowNutrition recipes={recipes} />
         </Accordian>
       </Card>
       <p></p>

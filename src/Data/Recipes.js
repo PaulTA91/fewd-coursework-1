@@ -22,7 +22,6 @@ export const recipes = [
       { name: "Salted Butter", amount: "100g" },
       { name: "Icing Sugar", amount: "300g" },
       { name: "Soft Cheese", amount: "100g" },
-      ,
     ],
 
     reviews: [
@@ -59,7 +58,6 @@ export const recipes = [
       { name: "Salted Butter", amount: "100g" },
       { name: "Icing Sugar", amount: "300g" },
       { name: "Soft Cheese", amount: "100g" },
-      ,
     ],
 
     reviews: [
@@ -96,7 +94,6 @@ export const recipes = [
       { name: "Salted Butter", amount: "100g" },
       { name: "Icing Sugar", amount: "300g" },
       { name: "Soft Cheese", amount: "100g" },
-      ,
     ],
 
     reviews: [
@@ -133,7 +130,6 @@ export const recipes = [
       { name: "Salted Butter", amount: "100g" },
       { name: "Icing Sugar", amount: "300g" },
       { name: "Soft Cheese", amount: "100g" },
-      ,
     ],
 
     reviews: [
@@ -170,7 +166,6 @@ export const recipes = [
       { name: "Salted Butter", amount: "100g" },
       { name: "Icing Sugar", amount: "300g" },
       { name: "Soft Cheese", amount: "100g" },
-      ,
     ],
 
     reviews: [
@@ -207,7 +202,6 @@ export const recipes = [
       { name: "Salted Butter", amount: "100g" },
       { name: "Icing Sugar", amount: "300g" },
       { name: "Soft Cheese", amount: "100g" },
-      ,
     ],
     reviews: [
       {
@@ -243,7 +237,6 @@ export const recipes = [
       { name: "Salted Butter", amount: "100g" },
       { name: "Icing Sugar", amount: "300g" },
       { name: "Soft Cheese", amount: "100g" },
-      ,
     ],
 
     reviews: [
@@ -280,7 +273,6 @@ export const recipes = [
       { name: "Salted Butter", amount: "100g" },
       { name: "Icing Sugar", amount: "300g" },
       { name: "Soft Cheese", amount: "100g" },
-      ,
     ],
 
     reviews: [
@@ -317,7 +309,6 @@ export const recipes = [
       { name: "Salted Butter", amount: "100g" },
       { name: "Icing Sugar", amount: "300g" },
       { name: "Soft Cheese", amount: "100g" },
-      ,
     ],
 
     reviews: [
@@ -354,7 +345,6 @@ export const recipes = [
       { name: "Salted Butter", amount: "100g" },
       { name: "Icing Sugar", amount: "300g" },
       { name: "Soft Cheese", amount: "100g" },
-      ,
     ],
 
     reviews: [
@@ -391,7 +381,6 @@ export const recipes = [
       { name: "Salted Butter", amount: "100g" },
       { name: "Icing Sugar", amount: "300g" },
       { name: "Soft Cheese", amount: "100g" },
-      ,
     ],
 
     reviews: [
@@ -428,7 +417,6 @@ export const recipes = [
       { name: "Salted Butter", amount: "100g" },
       { name: "Icing Sugar", amount: "300g" },
       { name: "Soft Cheese", amount: "100g" },
-      ,
     ],
 
     reviews: [
@@ -465,7 +453,6 @@ export const recipes = [
       { name: "Salted Butter", amount: "100g" },
       { name: "Icing Sugar", amount: "300g" },
       { name: "Soft Cheese", amount: "100g" },
-      ,
     ],
     reviews: [
       {
@@ -501,7 +488,6 @@ export const recipes = [
       { name: "Salted Butter", amount: "100g" },
       { name: "Icing Sugar", amount: "300g" },
       { name: "Soft Cheese", amount: "100g" },
-      ,
     ],
 
     reviews: [
@@ -538,7 +524,6 @@ export const recipes = [
       { name: "Salted Butter", amount: "100g" },
       { name: "Icing Sugar", amount: "300g" },
       { name: "Soft Cheese", amount: "100g" },
-      ,
     ],
 
     reviews: [
@@ -563,8 +548,6 @@ export const recipes = [
       { name: "Vegetable Oil", amount: "230ml" },
       { name: "Natural Yogurt", amount: "100g" },
       { name: "Earge Lggs", amount: "4" },
-
-      ,
     ],
 
     reviews: [
@@ -601,7 +584,6 @@ export const recipes = [
       { name: "Salted Butter", amount: "100g" },
       { name: "Icing Sugar", amount: "300g" },
       { name: "Soft Cheese", amount: "100g" },
-      ,
     ],
 
     reviews: [
