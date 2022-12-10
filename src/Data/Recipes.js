@@ -583,7 +583,7 @@ export const recipes = [
       { name: "Chopped Walnuts", amount: "100g" },
       { name: "Salted Butter", amount: "100g" },
       { name: "Icing Sugar", amount: "300g" },
-      { name: "Soft Cheese", amount: "100g" },
+      { name: "Blue Cheese", amount: "100g" },
     ],
 
     reviews: [

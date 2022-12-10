@@ -5,7 +5,7 @@ import AboutUs from "./Components/AboutUs";
 import Navigation from "./Components/Navigation";
 import { recipes } from "./Data/Recipes";
 import NoPage from "./Components/NoPage";
-
+import Search from "./Components/Search";
 import Menu from "./Components/Menu";
 import MenuItem from "./Components/MenuItem";
 
@@ -15,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigation />}>
           <Route path="/" element={<Home />} />
-          <Route path="menu" element={<Menu recipes={recipes} />}>
+          <Route path="recipes" element={<Search details={recipes} />}>
             <Route path=":itemId" element={<MenuItem recipes={recipes} />} />
           </Route>
           <Route path="aboutus" element={<AboutUs />}></Route>
