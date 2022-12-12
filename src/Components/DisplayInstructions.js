@@ -14,7 +14,9 @@ const ShowReviews = ({ recipes }) => {
     <>
       <Accordian id="instructions" className="recipe-accordian">
         <Accordian.Header>Instructions</Accordian.Header>
-        <Accordian.Body>{instructions}</Accordian.Body>
+        <Accordian.Body className="accordian-background">
+          {instructions}
+        </Accordian.Body>
       </Accordian>
     </>
   );

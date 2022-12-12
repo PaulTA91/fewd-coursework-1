@@ -68,3 +68,11 @@ body {
         font-weight: bold;
         color: #000000;
     }
+
+    .search-bar{
+        margin-left: 0.5%;
+    }
+
+    .accordian-background{
+        background-color: aliceblue !important;
+    }

@@ -14,7 +14,7 @@ const ShowReviews = ({ recipes }) => {
     <>
       <Accordian id="reviews" className="recipe-accordian">
         <Accordian.Header>Reviews</Accordian.Header>
-        <Accordian.Body>
+        <Accordian.Body className="accordian-background">
           <ul>
             {reviews.map((reviews) => (
               <li key={reviews.name}>

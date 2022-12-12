@@ -32,6 +32,9 @@ const MenuItem = ({ recipes }) => {
         <Accordian>
           <h1>{name}</h1>
           <h3>{description}</h3>
+          <Link>Add to Menu</Link>
+          <p></p>
+          <Link>Leave a Review</Link>
           <DisplayInstructions recipes={recipes} />
           <DisplayIngredients recipes={recipes} />
           <ShowReviews recipes={recipes} />

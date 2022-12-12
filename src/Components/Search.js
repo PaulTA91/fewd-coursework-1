@@ -16,9 +16,9 @@ export default function Search({ details }) {
 
   return (
     <div>
-      <div style={{ width: 50 + "%" }}>
+      <div className="search-bar" style={{ width: 25 + "%" }}>
         <input
-          className="form-control"
+          className="form-control search-bar"
           type="text"
           placeholder="Search..."
           onChange={(e) => setSearchString(e.target.value)}

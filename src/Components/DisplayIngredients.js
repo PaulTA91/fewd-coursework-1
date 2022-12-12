@@ -14,7 +14,8 @@ const DisplayIngredients = ({ recipes }) => {
     <>
       <Accordian id="ingredients" className="recipe-accordian">
         <Accordian.Header>Ingredients</Accordian.Header>
-        <Accordian.Body>
+        <Accordian.Body className="accordian-background">
+          <Link>Add to Shopping List</Link>
           <ul>
             {ingredients.map((ingredients) => (
               <li key={ingredients.name}>
