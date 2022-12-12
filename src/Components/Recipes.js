@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
 
-const Menu = ({ recipes }) => {
+const Recipes = ({ recipes }) => {
   return (
     <>
       <div className="container-fluid">
@@ -26,4 +26,4 @@ const Menu = ({ recipes }) => {
     </>
   );
 };
-export default Menu;
+export default Recipes;

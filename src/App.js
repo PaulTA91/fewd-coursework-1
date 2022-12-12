@@ -6,8 +6,8 @@ import Navigation from "./Components/Navigation";
 import { recipes } from "./Data/Recipes";
 import NoPage from "./Components/NoPage";
 import Search from "./Components/Search";
-import Menu from "./Components/Menu";
-import MenuItem from "./Components/MenuItem";
+import Menu from "./Components/Recipes";
+import RecipeItem from "./Components/RecipeItem";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         <Route path="/" element={<Navigation />}>
           <Route path="/" element={<Home />} />
           <Route path="recipes" element={<Search details={recipes} />}>
-            <Route path=":itemId" element={<MenuItem recipes={recipes} />} />
+            <Route path=":itemId" element={<RecipeItem recipes={recipes} />} />
           </Route>
           <Route path="aboutus" element={<AboutUs />}></Route>
           <Route path="*" element={<NoPage />} />

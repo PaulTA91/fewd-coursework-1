@@ -6,6 +6,8 @@ import DisplayIngredients from "./DisplayIngredients";
 import ShowReviews from "./ShowReviews";
 import ShowNutrition from "./ShowNutrition";
 import DisplayInstructions from "./DisplayInstructions";
+import AddReview from "./AddReview";
+import { Button } from "react-bootstrap";
 
 const MenuItem = ({ recipes }) => {
   const { itemId } = useParams();
@@ -32,9 +34,8 @@ const MenuItem = ({ recipes }) => {
         <Accordian>
           <h1>{name}</h1>
           <h3>{description}</h3>
-          <Link>Add to Menu</Link>
-          <p></p>
-          <Link>Leave a Review</Link>
+          <Button>Add to Menu</Button>
+
           <DisplayInstructions recipes={recipes} />
           <DisplayIngredients recipes={recipes} />
           <ShowReviews recipes={recipes} />

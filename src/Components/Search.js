@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Menu from "./Menu";
+import Recipes from "./Recipes";
 
 export default function Search({ details }) {
   const [searchString, setSearchString] = useState("");
@@ -24,7 +24,7 @@ export default function Search({ details }) {
           onChange={(e) => setSearchString(e.target.value)}
         />
       </div>
-      <Menu recipes={filtered} />
+      <Recipes recipes={filtered} />
     </div>
   );
 }

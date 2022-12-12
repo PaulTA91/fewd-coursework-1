@@ -1,6 +1,5 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
-import Card from "react-bootstrap/Card";
 import Accordian from "react-bootstrap/Accordion";
 
 const DisplayIngredients = ({ recipes }) => {
