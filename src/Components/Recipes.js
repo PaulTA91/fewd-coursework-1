@@ -18,15 +18,20 @@ const Recipes = ({ recipes }) => {
           <div className="col-3 submenu main-color">
             <ul>
               {recipes.map((recipe) => (
-                <li key={recipe.id}>
-                  <Link className="menu-list" to={recipe.name}>
-                    {recipe.name}
-                  </Link>
-                  <p></p>
-                  <Button onClick={(e) => handleClick(e, recipe.name)}>
-                    Add to Menu
-                  </Button>
-                </li>
+                <div className="item-box">
+                  <li key={recipe.id}>
+                    <Link className="menu-list" to={recipe.name}>
+                      {recipe.name}
+                    </Link>
+                    <p></p>
+                    <Button
+                      className="menu-button"
+                      onClick={(e) => handleClick(e, recipe.name)}
+                    >
+                      Add to Menu
+                    </Button>
+                  </li>
+                </div>
               ))}
             </ul>
           </div>

@@ -76,3 +76,12 @@ body {
     .accordian-background{
         background-color: aliceblue !important;
     }
+
+    .item-box{
+       border: 1px solid black;
+       margin: 5px;
+    }
+
+    .menu-button{
+        margin: 2px;
+    }
