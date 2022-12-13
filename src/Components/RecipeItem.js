@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Accordian from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
@@ -8,6 +8,10 @@ import ShowNutrition from "./ShowNutrition";
 import DisplayInstructions from "./DisplayInstructions";
 import AddReview from "./AddReview";
 import { Button } from "react-bootstrap";
+import StarRating from "./Stars";
+import Col from "react-bootstrap/Col";
+import MenuContext from "./MenuContext";
+import DisplayMenu from "./Menu";
 
 const MenuItem = ({ recipes }) => {
   const { itemId } = useParams();
@@ -33,8 +37,8 @@ const MenuItem = ({ recipes }) => {
       <Card className="recipe-card">
         <Accordian>
           <h1>{name}</h1>
+          <StarRating />
           <h3>{description}</h3>
-          <Button>Add to Menu</Button>
 
           <DisplayInstructions recipes={recipes} />
           <DisplayIngredients recipes={recipes} />
