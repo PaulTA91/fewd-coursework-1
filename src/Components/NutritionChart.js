@@ -28,7 +28,7 @@ const BarChart = ({ query }) => {
         method: "GET",
         headers: {
           "X-RapidAPI-Key":
-            "59a1ed6959mshd3995aae4929d99p14e246jsnd8b7b3daa451",
+            "fbbdc20ea5msh670f2fa05ebb446p1f121ajsnaf58092f3b27",
           "X-RapidAPI-Host": "calorieninjas.p.rapidapi.com",
         },
       };

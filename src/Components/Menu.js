@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import MenuContext from "./MenuContext";
 
 export default function DisplayMenu() {
-  const [menu] = useContext(MenuContext);
+  const menu = JSON.parse(localStorage.getItem("menu"));
 
   return (
     <>
@@ -12,7 +12,9 @@ export default function DisplayMenu() {
             <h1>Your Menu Items</h1>
             <ul>
               {menu.map((item, index) => (
-                <li key={index}>{item}</li>
+                <li key={index}>
+                  <h3>{item}</h3>
+                </li>
               ))}
             </ul>
           </div>

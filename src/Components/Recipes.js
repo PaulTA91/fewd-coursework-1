@@ -9,6 +9,7 @@ const Recipes = ({ recipes }) => {
   const handleClick = (e, selectedItem) => {
     let newState = [...selectedItems, selectedItem];
     setSelectedItems(newState);
+    localStorage.setItem("menu", JSON.stringify(newState));
   };
 
   return (
@@ -40,7 +41,7 @@ const Recipes = ({ recipes }) => {
           </div>
           <MenuContext.Provider value={[selectedItems, setSelectedItems]}>
             <div className="col-3 submenu main-color">
-              <DisplayMenu />
+              <DisplayMenu recipe={selectedItems} />
             </div>
           </MenuContext.Provider>
         </div>
