@@ -3,10 +3,12 @@ import { Link, Outlet } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import DisplayMenu from "./Menu";
 import MenuContext from "./MenuContext";
+import ShoppingContext from "./ShoppingContext";
+import DisplayShoppingList from "./DisplayShoppingList";
 
 const Recipes = ({ recipes }) => {
   const [selectedItems, setSelectedItems] = useState([]);
-  const handleClick = (e, selectedItem) => {
+  const addToMenu = (e, selectedItem) => {
     let newState = [...selectedItems, selectedItem];
     setSelectedItems(newState);
     localStorage.setItem("menu", JSON.stringify(newState));
@@ -16,7 +18,7 @@ const Recipes = ({ recipes }) => {
     <>
       <div className="container-fluid">
         <div className="row">
-          <div className="col-3 submenu main-color">
+          <div className="col-2 submenu main-color">
             <ul>
               {recipes.map((recipe) => (
                 <div className="item-box">
@@ -27,7 +29,7 @@ const Recipes = ({ recipes }) => {
                     <p></p>
                     <Button
                       className="menu-button"
-                      onClick={(e) => handleClick(e, recipe.name)}
+                      onClick={(e) => addToMenu(e, recipe.name)}
                     >
                       Add to Menu
                     </Button>
@@ -40,10 +42,15 @@ const Recipes = ({ recipes }) => {
             <Outlet />
           </div>
           <MenuContext.Provider value={[selectedItems, setSelectedItems]}>
-            <div className="col-3 submenu main-color">
+            <div className="col-2 submenu main-color">
               <DisplayMenu recipe={selectedItems} />
             </div>
           </MenuContext.Provider>
+          <ShoppingContext.Provider>
+            <div className="col-2 submenu main-color">
+              <DisplayShoppingList />
+            </div>
+          </ShoppingContext.Provider>
         </div>
       </div>
     </>

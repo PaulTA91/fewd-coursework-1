@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Accordian from "react-bootstrap/Accordion";
 
@@ -9,12 +9,22 @@ const DisplayIngredients = ({ recipes }) => {
   });
   const ingredients = currentItem[0].ingredients;
 
+  const [selectedItems, setSelectedItems] = useState([]);
+  const addToShoppingList = (e, selectedItem) => {
+    localStorage.setItem("shoppingList", JSON.stringify(ingredients));
+  };
+
   return (
     <>
       <Accordian id="ingredients" className="recipe-accordian">
         <Accordian.Header>Ingredients</Accordian.Header>
         <Accordian.Body className="accordian-background">
-          <Link>Add to Shopping List</Link>
+          <p
+            className="add-to-shopping"
+            onClick={(e) => addToShoppingList(e, ingredients)}
+          >
+            Add to Shopping List
+          </p>
           <ul>
             {ingredients.map((ingredients) => (
               <li key={ingredients.name}>

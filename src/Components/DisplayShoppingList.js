@@ -1,9 +1,9 @@
 import React, { useContext, useState } from "react";
-import MenuContext from "./MenuContext";
+import IngredientsContext from "./ShoppingContext";
 import { Button } from "react-bootstrap";
 
 export default function DisplayMenu() {
-  const menu = JSON.parse(localStorage.getItem("menu"));
+  const shoppingList = JSON.parse(localStorage.getItem("shoppingList"));
 
   // const [selectedItems, setSelectedItems] = useState([]);
 
@@ -28,17 +28,11 @@ export default function DisplayMenu() {
       <div className="container-fluid">
         <div className="row">
           <div className="col menu-list main-color">
-            <h1>Your Menu Items</h1>
+            <h1>Shopping List</h1>
             <ul>
-              {menu.map((item, index) => (
-                <li key={index}>
-                  <h3>{item}</h3>
-                  <Button
-                    className="remove-from-menu"
-                    //onClick={(e) => removeFromMenu(e, index)}
-                  >
-                    Remove from Menu
-                  </Button>
+              {shoppingList.map((item, index) => (
+                <li key={item.index}>
+                  <h3>{item.name}</h3>
                 </li>
               ))}
             </ul>
